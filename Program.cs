@@ -7,11 +7,18 @@ public class Program
     
     public static void Main(string[] args)
     {
-        if (!(args.Length > 0 && args[0] == "evaluate"))
+        bool evaluate = args.Length > 0 && args[0] == "evaluate";
+        if (evaluate)
+        {
+            Console.WriteLine("Staring test");
+            float averageScore = Test.Run(gameCount: GameCount);
+            Console.WriteLine($"Average Score: {averageScore}");
+            Console.WriteLine($"Passed: {averageScore > Threshold}");
+
+        }
+        else
+        {
             Solution.Experiment(); // implement this function to get debug data
-        Console.WriteLine("Staring test");
-        float averageScore = Test.Run(gameCount: GameCount);
-        Console.WriteLine($"Average Score: {averageScore}");
-        Console.WriteLine($"Passed: {averageScore > Threshold}");
+        }
     }
 }
