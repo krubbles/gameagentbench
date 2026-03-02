@@ -6,6 +6,7 @@ Implement the MakeMove() function in Solution.cs such that when Main() in Progra
 - Run `dotnet run -c release evaluate` for the final evaluation. 
 
 # Rules
+- You may read all .cs files in this directory
 - Do not edit any files except Solution.cs
 - Do not attempt to access any private data or functions in Game.cs (via Reflection or other means)
 - Do not use unsafe code. 
