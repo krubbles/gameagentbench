@@ -2,7 +2,6 @@ namespace Game1;
 
 public static class Test
 {
-
     public static float Run(int gameCount)
     {
         var watch = System.Diagnostics.Stopwatch.StartNew();
