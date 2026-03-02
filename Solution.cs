@@ -2,6 +2,12 @@
 
 public static class Solution
 {
+    public static void Experiment()
+    {
+        Console.WriteLine("Running experiment...");
+        // Write experiments here.
+    }
+    
     public enum DecisionMode : byte
     {
         ChaseFood,
