@@ -12,7 +12,16 @@ public static class Test
             while (!gameState.IsGameDone)
             {
                 int movesMade = gameState.TotalMovesMade;
-                Solution.MakeMove(gameState);
+                try
+                {
+                    Solution.MakeMove(gameState);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Exception occurred: {ex.Message}. Failing test.");
+                    Console.WriteLine(ex.StackTrace);
+                    return 0;
+                }
                 if (gameState.TotalMovesMade != movesMade + 1)
                 {
                     Console.WriteLine("Either made no move or made multiple moves. Failing test.");
