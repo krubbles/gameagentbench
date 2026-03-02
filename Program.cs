@@ -2,7 +2,7 @@ namespace Game1;
 
 public class Program
 {
-    public const float Threshold = 222;
+    public const float Threshold = 223.5f;
     public const int GameCount = 2000;
     
     public static void Main(string[] args)
